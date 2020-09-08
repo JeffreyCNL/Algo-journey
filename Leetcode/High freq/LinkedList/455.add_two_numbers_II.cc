@@ -15,6 +15,8 @@ struct ListNode
     ListNode(int x) : val(x), next(nullptr) {}
 };
 
+// https://leetcode.com/problems/add-two-numbers-ii/
+
 /* the main idea of this solution is to reverse the linkedlist first
 and add those numbers together, just like question number 2.
 after we get the result, we reverse back to the return value.
