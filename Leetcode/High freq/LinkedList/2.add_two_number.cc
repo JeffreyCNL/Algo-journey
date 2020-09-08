@@ -53,6 +53,29 @@ public:
     }
 };
 
+// class Solution{
+// public:
+//     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2){
+//         if (!l1) return l2;
+//         if (!l2) return l1;
+//         ListNode* ret = new ListNode(-1);
+//         ListNode* cur = ret;
+//         int carry = 0;
+//         while(l1 || l2){
+//             int v1 = l1 ? l1->val : 0;
+//             int v2 = l2 ? l2->val : 0;
+//             int sum = v1 + v2 + carry;
+//             carry = sum / 10;
+//             cur->next = new ListNode(sum % 10);
+//             cur = cur->next;
+//             l1 = l1 ? l1->next : l1;
+//             l2 = l2 ? l2->next : l2;
+//         }
+//         if (carry) cur->next = new ListNode(carry);
+//         return ret->next;
+//     }
+// };
+
 int main()
 {
 
